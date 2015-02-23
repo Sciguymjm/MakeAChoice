@@ -1,0 +1,109 @@
+
+$font: 'Roboto', sans-serif;
+
+$button-bg: #CCC;
+
+
+$bg-color: #EEEEEE;
+$bg-selected: #cfcfcf;
+$bg-hover: #ccc;
+
+$c-height: 500px;
+$c-width: 500px;
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: $font;
+}
+
+html, body
+{
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	border: none;
+}
+
+div {
+	&.container{
+		background: $bg-color;
+		padding: 25px;
+		border-radius: 10px;
+
+		position: relative;
+	  	top: 50%;
+	  	transform: translateY(-50%);
+	  	margin-left: calc(50% - #{$c-width} / 2);
+    	margin-right: calc(50% - #{$c-width} / 2);
+
+	}
+	
+	&.choices
+	{
+		padding: 10px;
+	}
+	&.choice
+	{
+		padding: 2px;
+		cursor: pointer;
+		min-height:25px;
+	}
+	&.hover
+	{
+		background: $bg-hover;
+	}
+	&.selected
+	{
+		background: $bg-selected;
+	}
+
+	&.history
+	{
+		height: 100px;
+		overflow-y: scroll;
+	}
+}
+
+button {
+	border: none;
+	background: $button-bg;
+	border-radius: 5px;
+	padding: 2px;
+	font-size: 15px;
+	cursor: pointer;
+	&.delete
+	{
+		float:right;
+	}
+	&:hover
+	{
+		background: $bg-color;
+	}
+}
+
+span {
+	&.help
+	{
+		font-style: italic;
+		font-weight: 300;
+	}
+	&.hlabel
+	{
+		font-weight: 300;
+	}
+
+	&.text
+	{
+		min-width:10px;
+
+	}
+}
+
+hr {
+	margin-top: 10px;
+	padding-top: 10px;
+	border:none;
+	border-top:1px solid #CCC;
+}

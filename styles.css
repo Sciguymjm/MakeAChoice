@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  border: none; }
+
+div.container {
+  background: #EEEEEE;
+  padding: 25px;
+  border-radius: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: calc(50% - 500px / 2);
+  margin-right: calc(50% - 500px / 2); }
+div.choices {
+  padding: 10px; }
+div.choice {
+  padding: 2px;
+  cursor: pointer;
+  min-height: 25px; }
+div.hover {
+  background: #ccc; }
+div.selected {
+  background: #cfcfcf; }
+div.history {
+  height: 100px;
+  overflow-y: scroll; }
+
+button {
+  border: none;
+  background: #CCC;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 15px;
+  cursor: pointer; }
+  button.delete {
+    float: right; }
+  button:hover {
+    background: #EEEEEE; }
+
+span.help {
+  font-style: italic;
+  font-weight: 300; }
+span.hlabel {
+  font-weight: 300; }
+span.text {
+  min-width: 10px; }
+
+hr {
+  margin-top: 10px;
+  padding-top: 10px;
+  border: none;
+  border-top: 1px solid #CCC; }
+
+/*# sourceMappingURL=styles.css.map */
